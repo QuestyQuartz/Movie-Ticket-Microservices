@@ -7,7 +7,7 @@ of the services in the microservice architecture
 are explained in the readme files of the services.
 
 ## Subject Of Project
-CineVision App is online cinema ticket sale website. Purpose of 
+This application is an online cinema ticket sale website. Purpose of 
 this website is to provide ease of buying tickets for those who 
 want to watch movies in the cinema. People can display movies in the theaters or
 upcoming movies. They can view the movie details and can learn the plot of the movie, 
@@ -103,97 +103,5 @@ Redux was used. For, design of the UI, Bootstrap and Css are used.
     <img src="architectural_design.jpeg" />
 </p>
 
-## How can I use the Project ?
-Download the source code of project. Open this project with your 
-favorite IDE. Make sure Java 17, Node.js and Docker are installed on
-your computer. And, follow these steps:
 
-<ol>
-    <h3> <li>Run docker-compose.yml file</li> </h3>
-<p>
-This docker compose file is necessary to run postgre, mongo, 
-kafka etc. Open cmd in the project directory and type
-
-    docker compose up -d
-
-command to run the containers.
-</p>
-
- <h3> <li>Run Eureka Server</li> </h3>
-<p>
-    Go to EurekaServerApplication class which is in eureka-server module
-and run this class to create eureka server. If you want to display
-eureka server panel, you can go to <b>localhost:8080/eureka/web </b> or
-<b>localhost:8761</b> addresses. Then, enter username= <b>eureka</b> and 
-password= <b>password</b>.
-
-</p>
-
- <h3> <li>Run Api Gateway</li> </h3>
-<p>
-   To forward the requests to the relevant services, Gateway must be 
-run. Go to ApiGatewayApplication class which is in api-gateway modules
-and run this class. If you want to check that the api-gateway is registered 
-to the eureka server, you can display the eureka server panel.
-</p>
-
- <h3> <li>Run Movie Service</li> </h3>
-<p> 
-To run movie service go to movie service module. And, run 
-MovieServiceApplication class.
-</p>
-
-<h3> <li>Run User Service</li> </h3>
-<p> 
-In the user service module, find UserServiceApplication class and run this
-class.
-</p>
-
-<h3> <li>Run Email Service</li> </h3>
-<p> 
-EmailServiceApplication class is in email service module. To run email service module,
-run this class.
-</p>
-
-<h3> <li>Run Email Service</li> </h3>
-<p> 
-EmailServiceApplication class is in email service module. To run email service module,
-run this class. If this module is started successfully, you can view 
-all running services in the eureka server using with eureka panel which is
-running on localhost:8761 or localhost:8080/eureka/web.
-</p>
-<h5>Important Note: <br>
-Change mail configurations in application.yml file with your own configurations.
-</h5>
-
-<h3> <li>Start React (Frontend) Application</li> </h3>
-<p> 
-Go to frontend package which is the location of frontend code.
-Firstly, type
-
-    npm install
-
-command in cmd for downloading package.json dependencies. Then, To start
-the React app, type
-
-    npm start
-
-command. After that, npm will start your React Application
-on <b> localhost:3000 </b>.
-
-</p>
-
-
-</ol>
-
-
-## Project UI
-
-https://user-images.githubusercontent.com/79381882/194945895-f7e2d2d2-4899-4ade-8c79-ecb647949ffd.mp4
-
-<h4>Main Page</h4>
-
-<img src="homa_page.jpg">
-
-[For more UI Images](https://github.com/VonHumbolt/CineVisionMicroserviceProject/tree/main/frontend)
-"# Movie-Ticket-Microservice" 
+"# Movie-Ticket-Microservices" 
